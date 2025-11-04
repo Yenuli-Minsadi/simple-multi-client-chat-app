@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ancMainDash" prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ServerController">
+    <children>
+        <Pane layoutX="98.0" layoutY="75.0" prefHeight="350.0" prefWidth="354.0" style="-fx-background-color: blue; -fx-background-radius: 30px;">
+            <children>
+                <Text fill="WHITE" layoutX="140.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="50.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="txtUsnm" layoutX="140.0" layoutY="140.0" />
+                <Button fx:id="btnLogIn" layoutX="209.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnLogInOnAction" style="-fx-background-radius: 50px; -fx-background-color: yellow;" text="Enter Chat&gt;">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Button>
+            </children>
+            <effect>
+                <DropShadow height="18.07" radius="8.535" width="18.07" />
+            </effect>
+        </Pane>
+    </children>
+</AnchorPane>
